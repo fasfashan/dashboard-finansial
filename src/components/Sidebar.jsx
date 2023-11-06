@@ -1,3 +1,3 @@
 export default function Sidebar() {
-  return <p>Sidebar</p>;
+  return <p className="">Sidebar</p>;
 }
