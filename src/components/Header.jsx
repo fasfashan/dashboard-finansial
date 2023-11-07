@@ -14,7 +14,7 @@ export default function Header() {
     textTransform: "capitalize",
   };
   return (
-    <header className="mb-10  space-y-6 col-span-12">
+    <header className="mb-10   space-y-6 col-span-12">
       <div className="flex col-span-12 justify-between items-center">
         <div className="space-y-1">
           <h1 className="text-extraLarge font-semibold">

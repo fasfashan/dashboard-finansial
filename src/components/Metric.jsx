@@ -1,5 +1,6 @@
 import { PieChart } from "@mui/x-charts/PieChart";
 import MoreVerticalIcon from "../assets/icons/MoreVerticalIcon";
+import MoreButton from "./Buttons/MoreButton";
 import ArrowUpIcon from "../assets/icons/ArrowUpIcon";
 import ArrowDownIcon from "../assets/icons/ArrowDownIcon";
 import IconButton from "@mui/material/IconButton";
@@ -118,40 +119,7 @@ export default function Metric() {
         <div className="flex gap-16 justify-between flex-col grow">
           <div className="flex justify-between">
             <p className="text-medium font-medium">Akun sampingan</p>
-            <IconButton
-              sx={{ padding: 0 }}
-              aria-label="more"
-              id="long-button"
-              aria-controls={open ? "long-menu" : undefined}
-              aria-expanded={open ? "true" : undefined}
-              aria-haspopup="true"
-              onClick={handleClick}
-            >
-              <MoreVerticalIcon />
-            </IconButton>
-            <Menu
-              id="long-menu"
-              MenuListProps={{ "aria-labelledby": "long-button" }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              PaperProps={{
-                style: {
-                  maxHeight: ITEM_HEIGHT * 4.5,
-                  width: "20ch",
-                },
-              }}
-            >
-              {options.map((option) => (
-                <MenuItem
-                  sx={{ fontFamily: "Inter" }}
-                  key={option}
-                  onClick={handleClose}
-                >
-                  {option}
-                </MenuItem>
-              ))}
-            </Menu>
+            <MoreButton />
           </div>
           <div className="flex flex-col">
             <p className="text-smalll  text-neutral500">Saldo Saat ini</p>
