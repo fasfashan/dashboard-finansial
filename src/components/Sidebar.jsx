@@ -9,7 +9,7 @@ import SettingsIcon from "../assets/icons/SettingsIcon";
 import Avatar from "@mui/material/Avatar";
 export default function Sidebar() {
   return (
-    <aside className="px-4 py-8 flex flex-col justify-between min-h-screen  border-r-2 border-neutral200">
+    <aside className="px-4 col-span-1 py-8 flex flex-col justify-between min-h-screen  border-r-2 border-neutral200">
       <ul className="flex flex-col gap-2">
         <li className="p-3">
           <HomeIcon />
