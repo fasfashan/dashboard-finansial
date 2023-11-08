@@ -46,6 +46,9 @@ export default {
         success700: "#087443",
         success800: "#095C37",
         success900: "#084C2E",
+      },
+      backgroundColor:{
+        linear: "linear-gradient(45deg, #00359E 0%, #155EEF 100%);"
       }
     },
   },

@@ -9,14 +9,14 @@ import SettingsIcon from "../assets/icons/SettingsIcon";
 import Avatar from "@mui/material/Avatar";
 export default function Sidebar() {
   return (
-    <aside className="px-4  scroll min-h-screen col-span-1 py-0 flex flex-col   border-r-2 border-neutral200">
-      <div className="flex  sticky -top-2  min-h-screen flex-col justify-between">
+    <aside className="px-4  scroll min-h-screen col-span-1  flex flex-col   border-r-2 border-neutral200">
+      <div className="flex  sticky -top-0  min-h-screen flex-col justify-between">
         <div className="flex flex-col  ">
           <ul className="flex h-80 justify-between flex-col gap-1">
             <li className="p-3">
               <HomeIcon />
             </li>
-            <li className="p-3">
+            <li className="p-3 bg-neutral100 rounded-lg">
               <BarChartIcon />
             </li>
             <li className="p-3">
